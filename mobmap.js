@@ -144,13 +144,13 @@ function displayToc(filter) {
    tocTable += '<table class="mob-table-all mob-hoverable">';
    tocTable += '<tr class="mob-deep-orange">';
    tocTable += '<th class="mob-text-white">';
-   tocTable += '<a href="javascript:toggleTitleSort();" data-toggle="tooltip" data-placement="top" title="' + tocTool1 + '">' + tocHead1 + '</a>';
+   tocTable += '<a href="javascript:toggleTitleSort();" title="' + tocTool1 + '">' + tocHead1 + '</a>';
    tocTable += '</th>';
    tocTable += '<th class="mob-text-white">';
-   tocTable += '<a href="javascript:toggleDateSort();" data-toggle="tooltip" data-placement="top" title="' + tocTool2 + '">' + tocHead2 + '</a>';
+   tocTable += '<a href="javascript:toggleDateSort();" title="' + tocTool2 + '">' + tocHead2 + '</a>';
    tocTable += '</th>';
    tocTable += '<th class="mob-text-white">';
-   tocTable += '<a href="javascript:allPosts();" data-toggle="tooltip" data-placement="top" title="' + tocTool3 + '">' + tocHead3 + '</a>';
+   tocTable += '<a href="javascript:allPosts();" title="' + tocTool3 + '">' + tocHead3 + '</a>';
    tocTable += '</th>';
    tocTable += '</tr>';
    for (var i = 0; i < postTitle.length; i++) {
@@ -167,10 +167,10 @@ function displayToc(filter) {
    }
    tocTable += '</table>';
    if (numDisplayed == postTitle.length) {
-      var tocNote = '<span class="toc-note">Displaying all ' + postTitle.length + ' posts<br/></span>'; }
+      var tocNote = '<span class="toc-note">Menampilkan ' + postTitle.length + ' artikel<br/></span>'; }
    else {
-      var tocNote = '<span class="toc-note">Displaying ' + numDisplayed + ' posts labeled \'';
-      tocNote += postFilter + '\' of '+ postTitle.length + ' posts total<br/></span>';
+      var tocNote = '<span class="toc-note">Menampilkan ' + numDisplayed + ' artikel dengan labeled \'';
+      tocNote += postFilter + '\' dari total '+ postTitle.length + ' artikel<br/></span>';
    }
    tocdiv.innerHTML = tocNote + tocTable;
 } // end of displayToc
