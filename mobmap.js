@@ -144,13 +144,13 @@ function displayToc(filter) {
    tocTable += '<table class="mob-table-all mob-hoverable">';
    tocTable += '<tr class="mob-deep-orange">';
    tocTable += '<th class="mob-text-white">';
-   tocTable += '<a href="javascript:toggleTitleSort();" title="' + tocTool1 + '">' + tocHead1 + '</a>';
+   tocTable += '<a href="javascript:toggleTitleSort();" data-toggle="tooltip" data-placement="top" title="' + tocTool1 + '">' + tocHead1 + '</a>';
    tocTable += '</th>';
    tocTable += '<th class="mob-text-white">';
-   tocTable += '<a href="javascript:toggleDateSort();" title="' + tocTool2 + '">' + tocHead2 + '</a>';
+   tocTable += '<a href="javascript:toggleDateSort();" data-toggle="tooltip" data-placement="top" title="' + tocTool2 + '">' + tocHead2 + '</a>';
    tocTable += '</th>';
    tocTable += '<th class="mob-text-white">';
-   tocTable += '<a href="javascript:allPosts();" title="' + tocTool3 + '">' + tocHead3 + '</a>';
+   tocTable += '<a href="javascript:allPosts();" data-toggle="tooltip" data-placement="top" title="' + tocTool3 + '">' + tocHead3 + '</a>';
    tocTable += '</th>';
    tocTable += '</tr>';
    for (var i = 0; i < postTitle.length; i++) {
