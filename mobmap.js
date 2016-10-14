@@ -142,7 +142,7 @@ function displayToc(filter) {
       tocTool3 = 'Tampilkan semua artikel';
    }
    tocTable += '<table class="mob-table-all mob-hoverable">';
-   tocTable += '<tr class="mob-deep-orange">';
+   tocTable += '<tr class="mob-deep-orange mob-text-white">';
    tocTable += '<th>';
    tocTable += '<a href="javascript:toggleTitleSort();" title="' + tocTool1 + '">' + tocHead1 + '</a>';
    tocTable += '</th>';
